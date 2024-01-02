@@ -1,24 +1,77 @@
 /*------- Constants -------*/
 
+/* 
+  Imports from Data files: 
+    audio
+    images 
+    story 
+      prompts
+      options 
+      endings
+*/
 
 
-/*------- Variables -------*/
+/*------- Variables (state) -------*/
 
+/* LET (DON'T NEED TO HOLD VALUES YET - DO THAT IN INIT FUNCTION)
+  story (OBJECT)
+    image
+    prompt
+    options
+    ending
+  win
+  lose
+*/
 
 
 /*------- Cached Element References -------*/
 
+/* CONST
+  buttons
+  image
+  prompt
+*/
 
 
 /*------- Event Listeners -------*/
 
+/* CONST
+  option buttons
+  reset button?
+  any other clickables?
+*/
 
 
 /*------- Functions -------*/
 
 console.log(`Mulder, we're gonna steal the Declaration of Independence`)
 
-/*------- example from Ben for state variable (object) (or was it a constant to be put in a data file?):
+// init()
+
+/*
+  init()
+    story (OBJECT) =
+      image
+      prompt
+      options
+      ending
+    win =
+    lose =
+    render()
+  handleClick()
+  checkForWin()
+  checkForLose()
+  updateImage()
+  updatePrompt()
+  render()
+ */
+
+
+/* ESTABLISH INIT SKELETON - USE CURRENT WIREFRAME FOR ALL RENDERINGS FOR NOW AND WORRY ABOUT ADJUSTING LAYOUT BETWEEN START SCREEN>PROMPT 1 LATER! (THERE WILL BE AN EXTRA BUTTON ON THE START SCREEN FOR A SEC, DEAL WITH IT) */
+
+
+
+/*------- example from Ben for game state variable (object) (to use for init function?) (or was it a constant to be put in a data file?):
 
 let story = [
   {
