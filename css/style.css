@@ -55,7 +55,7 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   margin: 10px;
-  padding: 30px;
+  padding: 15px;
 }
 
 .flex-parent2 {
@@ -79,6 +79,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   margin: 15px;
+  padding: 10px;
 }
 .flex-child2 {
   font-family: sans-serif;
@@ -92,12 +93,18 @@ button:hover {
 }
 
 .flex-parent > :nth-child(1) {
+  margin: 5px;
+  border-radius: 5px;
+  color: black;
+  background-color: lightgoldenrodyellow;
+}
+.flex-parent > :nth-child(2) {
   background-color: #d0d0d0;
   color: #505050;
   height: 750px;
   width: 1350px;
 }
-.flex-parent > :nth-child(2) {
+.flex-parent > :nth-child(3) {
   background-color: #d0d0d0;
   color: #505050;
   height: 300px;
@@ -114,11 +121,11 @@ button:hover {
 
 .flex-parent2 > :nth-child(1) {
   background-color: #d0d0d0;
-  color: #505050;
+  /* color: #505050; */
 }
 .flex-parent2 > :nth-child(2) {
   background-color: #d0d0d0;
-  color: #505050;
+  /* color: #505050; */
 }
 /* .flex-parent2 > :nth-child(3) {
   background-color: #d0d0d0;
@@ -142,13 +149,20 @@ button:hover {
     height: 100px;
     width: 1000px;
   }
+  /* RESTART BUTTON
   .flex-parent > :nth-child(1) {
     background-color: #d0d0d0;
     color: #505050;
     height: 500px;
     width: 900px;
-  }
+  } */
   .flex-parent > :nth-child(2) {
+    background-color: #d0d0d0;
+    color: #505050;
+    height: 500px;
+    width: 900px;
+  }
+  .flex-parent > :nth-child(3) {
     background-color: #d0d0d0;
     color: #505050;
     height: 100px;
