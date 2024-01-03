@@ -46,6 +46,8 @@ const opt2BtnEl = document.getElementById('option2')
 */
 
 restartBtnEl.addEventListener('click', init)
+opt1BtnEl.addEventListener('click', handleClick)
+opt2BtnEl.addEventListener('click', handleClick)
 
 /*------- Functions -------*/
 
@@ -55,6 +57,10 @@ init()
 
 function init() {
   console.log(`Clicked Restart`)
+}
+
+function handleClick(evt) {
+  console.log(`I clicked ${evt.target.id}!`)
 }
 
 /*
