@@ -1,25 +1,30 @@
-html {
+/* html {
   box-sizing: border-box
 }
 
 /* The Universal Selector */
-*, /* All elements*/
-*::before, /* All ::before pseudo-elements */
-*::after { /* All ::after pseudo-elements */
-  /* height & width will now include border & padding by default
-     but can be over-ridden as needed */
+/* asterisk = All elements */
+/* All ::before pseudo-elements */
+/* All ::after pseudo-elements */
+/* height & width will now include border & padding by default
+but can be over-ridden as needed */
+/* 
+/ *, 
+/ *::before,
+/ *::after { 
   box-sizing: inherit;
-}
+} */
 
 /* resets font size to be 62.5% of the user preference - 
      in most browser configurations this will be 10px */
-:root {
+/* :root {
   font-size: 62.5%;
-}
+} */
 
 nav {
   border: #FFFAE3;
   border-style: dotted;
+  display: flex;
 }
 
 body {
@@ -27,11 +32,17 @@ body {
   /* Use a system font, if none are available use an available sans-sarif font */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  margin: 0;
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
 }
 
 /* menu & restart buttons don't have individual styling yet - below is placeholder default button styling */
@@ -40,8 +51,8 @@ button {
   border-radius: 5px;
   color: black;
   background-color: lightgoldenrodyellow;
-  font-size: 18px;
-  padding: 8px 12px;
+  font-size: 12px;
+  padding: 5px 10px;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -58,12 +69,12 @@ button:hover {
   background-color: goldenrod;
   display: flex;
   flex-direction: column;
-  height: 750px;
-  width: 1500px;
+  height: 500px;
+  width: 1000px;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
-  padding: 15px;
+  padding: 10px;
   border-style: inset;
   border-color: black;
 }
@@ -72,12 +83,12 @@ button:hover {
   background-color: goldenrod;
   display: flex;
   /* flex-direction: column; */
-  height: 150px;
-  width: 1500px;
+  height: 125px;
+  width: 1000px;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
-  padding: 50px;
+  padding: 10px;
   border-style: inset;
   border-color: black;
 }
@@ -85,13 +96,14 @@ button:hover {
 .flex-ip-child {
   background-color: lightgoldenrodyellow;
   color: darkslategrey;
+  text-align: center;
   font-family: sans-serif;
   font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px;
-  padding: 15px;
+  margin: 5px;
+  padding: 10px;
   border-style: dotted;
   border-color: darkgoldenrod;
 }
@@ -99,13 +111,14 @@ button:hover {
 .flex-ip-child#image {
   background-color: rgba(255, 255, 224, 0.5);
   color: black;
-  height: 750px;
-  width: 1350px;
+  height: 325px;
+  width: 950px;
 }
 
 .flex-ip-child#prompt {
-  height: 300px;
-  width: 1350px;
+  height: 75px;
+  width: 950px;
+  font-size: 15px;
 }
 
 .flex-option-child {
@@ -116,15 +129,8 @@ button:hover {
   border-color: lightgoldenrodyellow;
   background-color: darkgoldenrod;
   margin: 5px;
+  width: 500px;
 }
-
-
-/* set aside - was commented out under `button`
-font-size: 18px;
-padding: 8px 12px;
-letter-spacing: 2px;
-font-weight: bold;
-*/
 
 .option-btn {  
   margin: 5px;
@@ -132,15 +138,13 @@ font-weight: bold;
   color: black;
   background-color: pink;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 8px;
   font-weight: 500;
 }
-/* button#option2 {  
-  margin: 5px;
-  border-radius: 5px;
-  color: black;
-  background-color: lightgreen;
-} */
+
+.option-btn#option2 {
+ background-color: lightseagreen;
+}
 
 @media only screen and (max-width: 1024px) {
   .flex-img-prompt-parent {
@@ -150,9 +154,9 @@ font-weight: bold;
     
   }
   .flex-option-parent {
-    height: 175px;
+    /* height: 175px; */
     /* add sizing scaling */
-    flex-direction: column;
+    /* flex-direction: column; */
     background-color: darkgoldenrod;
     padding: 5px;
     justify-content: space-around;
@@ -161,21 +165,22 @@ font-weight: bold;
     background-color: goldenrod;
     border-style: dotted;
     border-color: lightgoldenrodyellow;
-    height: 750px;
-    width: 1350px;
+    /* height: 750px; */
+    /* width: 1350px; */
   }
   .flex-ip-child#prompt {
     background-color: rgb(251, 224, 153);
     color: black;
     border-style: dotted;
     border-color: goldenrod;
-    height: 100px;
-    width: 1350px;
+    /* height: 100px; */
+    /* width: 1350px; */
   }
   .flex-option-child {
     border-style: dotted;
     border-color: lightgoldenrodyellow;
     background-color: goldenrod;
+    display: flex;
   }
   .option-btn {
     background-color: lightgreen;
