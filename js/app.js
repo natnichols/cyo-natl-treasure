@@ -32,6 +32,10 @@
   prompt
 */
 
+const restartBtnEl = document.getElementById('restart')
+const opt1BtnEl = document.getElementById('option1')
+const opt2BtnEl = document.getElementById('option2')
+
 
 /*------- Event Listeners -------*/
 
@@ -41,12 +45,17 @@
   any other clickables?
 */
 
+restartBtnEl.addEventListener('click', init)
 
 /*------- Functions -------*/
 
 console.log(`Mulder, we're gonna steal the Declaration of Independence`)
 
-// init()
+init()
+
+function init() {
+  console.log(`Clicked Restart`)
+}
 
 /*
   init()
