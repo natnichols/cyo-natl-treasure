@@ -17,6 +17,11 @@ html {
   font-size: 62.5%;
 }
 
+nav {
+  border: #FFFAE3;
+  border-style: dotted;
+}
+
 body {
   background-color: darkgoldenrod;
   /* Use a system font, if none are available use an available sans-sarif font */
@@ -29,15 +34,16 @@ body {
   align-items: center;
 }
 
+/* menu & restart buttons don't have individual styling yet - below is placeholder default button styling */
 button {
   margin: 5px;
   border-radius: 5px;
   color: black;
   background-color: lightgoldenrodyellow;
-  /* font-size: 18px;
+  font-size: 18px;
   padding: 8px 12px;
-  letter-spacing: 2px; */
-  /* font-weight: bold; */
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 button:hover {
@@ -46,19 +52,23 @@ button:hover {
   cursor: pointer;
 }
 
-.flex-parent {
+/* Default button styling above ^ */
+
+.flex-img-prompt-parent {
   background-color: goldenrod;
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 750px;
   width: 1500px;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
   padding: 15px;
+  border-style: inset;
+  border-color: black;
 }
 
-.flex-parent2 {
+.flex-option-parent {
   background-color: goldenrod;
   display: flex;
   /* flex-direction: column; */
@@ -67,114 +77,108 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   margin: 10px;
-  padding: 10px;
+  padding: 50px;
+  border-style: inset;
+  border-color: black;
 }
 
-.flex-child {
+.flex-ip-child {
+  background-color: lightgoldenrodyellow;
+  color: darkslategrey;
   font-family: sans-serif;
   font-size: 25px;
-  height: 60px;
-  width: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 15px;
-  padding: 10px;
-}
-.flex-child2 {
-  font-family: sans-serif;
-  font-size: 16px;
-  height: 60px;
-  width: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
+  padding: 15px;
+  border-style: dotted;
+  border-color: darkgoldenrod;
 }
 
-.flex-parent > :nth-child(1) {
-  margin: 5px;
-  border-radius: 5px;
+.flex-ip-child#image {
+  background-color: rgba(255, 255, 224, 0.5);
   color: black;
-  background-color: lightgoldenrodyellow;
-}
-.flex-parent > :nth-child(2) {
-  background-color: #d0d0d0;
-  color: #505050;
   height: 750px;
   width: 1350px;
 }
-.flex-parent > :nth-child(3) {
-  background-color: #d0d0d0;
-  color: #505050;
+
+.flex-ip-child#prompt {
   height: 300px;
   width: 1350px;
 }
-/* .flex-parent > :nth-child(3) {
-  background-color: #d0d0d0;
-  color: #505050;
-}
-.flex-parent > :nth-child(4) {
-  background-color: #d0d0d0;
-  color: #505050;
-} */
 
-.flex-parent2 > :nth-child(1) {
-  background-color: #d0d0d0;
-  /* color: #505050; */
+.flex-option-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-style: dotted;
+  border-color: lightgoldenrodyellow;
+  background-color: darkgoldenrod;
+  margin: 5px;
 }
-.flex-parent2 > :nth-child(2) {
-  background-color: #d0d0d0;
-  /* color: #505050; */
+
+
+/* set aside - was commented out under `button`
+font-size: 18px;
+padding: 8px 12px;
+letter-spacing: 2px;
+font-weight: bold;
+*/
+
+.option-btn {  
+  margin: 5px;
+  border-radius: 5px;
+  color: black;
+  background-color: pink;
+  font-size: 15px;
+  padding: 8px 12px;
+  font-weight: 500;
 }
-/* .flex-parent2 > :nth-child(3) {
-  background-color: #d0d0d0;
-  color: #505050;
-}
-.flex-parent2 > :nth-child(4) {
-  background-color: #d0d0d0;
-  color: #505050;
+/* button#option2 {  
+  margin: 5px;
+  border-radius: 5px;
+  color: black;
+  background-color: lightgreen;
 } */
 
 @media only screen and (max-width: 1024px) {
-  .flex-parent {
-    /* flex-direction: column; */
+  .flex-img-prompt-parent {
+    /* flex-direction: column; 
+    add sizing scaling */
     background-color: darkgoldenrod;
-    height: 400px;
-    width: 1000px;
+    
   }
-  .flex-parent2 {
-    /* flex-direction: column; */
+  .flex-option-parent {
+    height: 175px;
+    /* add sizing scaling */
+    flex-direction: column;
     background-color: darkgoldenrod;
+    padding: 5px;
+    justify-content: space-around;
+  }
+  .flex-ip-child#image {
+    background-color: goldenrod;
+    border-style: dotted;
+    border-color: lightgoldenrodyellow;
+    height: 750px;
+    width: 1350px;
+  }
+  .flex-ip-child#prompt {
+    background-color: rgb(251, 224, 153);
+    color: black;
+    border-style: dotted;
+    border-color: goldenrod;
     height: 100px;
-    width: 1000px;
+    width: 1350px;
   }
-  /* RESTART BUTTON
-  .flex-parent > :nth-child(1) {
-    background-color: #d0d0d0;
-    color: #505050;
-    height: 500px;
-    width: 900px;
-  } */
-  .flex-parent > :nth-child(2) {
-    background-color: #d0d0d0;
-    color: #505050;
-    height: 500px;
-    width: 900px;
+  .flex-option-child {
+    border-style: dotted;
+    border-color: lightgoldenrodyellow;
+    background-color: goldenrod;
   }
-  .flex-parent > :nth-child(3) {
-    background-color: #d0d0d0;
-    color: #505050;
-    height: 100px;
-    width: 900px;
-  }
-  .flex-parent2 > :nth-child(1) {
-    background-color: #d0d0d0;
-    color: #505050;
-  }
-  .flex-parent2 > :nth-child(2) {
-    background-color: #d0d0d0;
-    color: #505050;
+  .option-btn {
+    background-color: lightgreen;
   }
   body {
     background-color: goldenrod;
