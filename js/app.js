@@ -35,6 +35,8 @@
 const restartBtnEl = document.getElementById('restart')
 const opt1BtnEl = document.getElementById('option1')
 const opt2BtnEl = document.getElementById('option2')
+const imageEl = document.getElementById('image')
+const promptEl = document.getElementById('prompt')
 
 
 /*------- Event Listeners -------*/
@@ -61,6 +63,20 @@ function init() {
 
 function handleClick(evt) {
   console.log(`I clicked ${evt.target.id}!`)
+  render()
+}
+
+function updateImage() {
+  console.log(`Updating the ${imageEl.id}!`);
+}
+
+function updatePrompt() {
+  console.log(`Updating the ${promptEl.id}!`);
+}
+
+function render() {
+  updateImage()
+  updatePrompt()
 }
 
 /*
