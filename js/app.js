@@ -10,7 +10,7 @@
       endings
 */
 
-import { init, next } from "../data/story.js";
+import { storyEls } from "../data/story.js";
 
 /*------- Variables (state) -------*/
 
@@ -30,13 +30,15 @@ let win, lose
 
 /*------- Cached Element References -------*/
 
+// const storyContainer = document.getElementById('story-container')
+// const imgPromptContainer = document.getElementById('img-prompt-container')
+// const imageEl = document.getElementsByClassName('image')
+// const promptEl = document.getElementsByClassName('prompt')
+// const optionContainer = document.getElementById('option-container')
+// const optionButtons = document.getElementsByClassName('option')
 const restartBtnEl = document.querySelector('#restart')
-const storyContainer = document.getElementById('story-container')
-const imgPromptContainer = document.getElementById('img-prompt-container')
-const imageEl = document.getElementsByClassName('image')
-const promptEl = document.getElementsByClassName('prompt')
-const optionContainer = document.getElementById('option-container')
-const optionButtons = document.getElementsByClassName('option')
+const image = document.querySelector(".image")
+const storyPrompt = document.querySelector(".prompt")
 const optBtn1 = document.getElementById('option1')
 const optBtn2 = document.getElementById('option2')
 
@@ -49,8 +51,10 @@ const optBtn2 = document.getElementById('option2')
 */
 
 restartBtnEl.addEventListener('click', init)
-optBtn1.addEventListener('click', () => next(option1))
-optBtn2.addEventListener('click', () => next(option2))
+// optBtn1.addEventListener('click', optionClick)
+// optBtn2.addEventListener('click', optionClick)
+optBtn1.addEventListener('click', next(option1))
+optBtn2.addEventListener('click', next(option2))
 
 /*------- Functions -------*/
 
@@ -58,31 +62,36 @@ optBtn2.addEventListener('click', () => next(option2))
 
 init()
 
-// function init() {
-//   let story = [
-//     {
-//       imageEl: `image file`,
-//       promptNumber: 1,
-//       promptEl: 'You are on the deck of the Charlotte and you find a door to the hull.',
-//       options: [
-//         {
-//           option1: `Open the door`,
-//           goTo: 3
-//         },
-//         {
-//           option2: `Have a cigarette first`,
-//           goTo: 2
-//         }
-//       ]
-//     }
-//   ]
-//   render(story)
-// }
+function init() {
+  render()
+}
 
+function render() {
+  image.innerHTML = ''
+  story.forEach((storyEl, idx) => {
+    next(storyEl, idx)
+  })
+}
 
-// function handleClick(evt) {
+function next(promptNum) {
+  image.textContent = storyEls.find(
+    storyEl => storyEl.promptNum === storyEl.image
+  )
+  storyPrompt.textContent = storyEls.find(
+    storyEl => storyEl.promptNum === storyEl.prompt
+  )
+  /* currently option buttons are showing the full options array instead of just the object that corresponds to opt1 or opt2 */
+  optBtn1.innerHTML = storyEls.find(
+    storyEl => storyEl.promptNum === promptNum
+  ).options.map((option, idx) => (`<option value ="${option.opt1}">${option.opt1}</option>`)).join("")
+  optBtn2.innerHTML = storyEls.find(
+    storyEl => storyEl.promptNum === promptNum
+  ).options.map((option, idx) => (`<option value ="${option.opt2}">${option.opt2}</option>`)).join("")
+}
+
+// function optionClick(evt) {
 //   console.log(`I clicked ${evt.target.id}!`)
-//   const newStory = updateStory()
+//   const newStory = next()
 //   story.push(newStory)
 //   console.log(story)
 //   render()
