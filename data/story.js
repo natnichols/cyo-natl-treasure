@@ -107,10 +107,14 @@ const story = [
   },
 ]
 
-// function storyFunction() {
-//   // function that pulls elements from the story array to be used in app.js
-// }
+// function that pulls elements from the story array to be used in app.js
+function getStoryPrompt() {
+  // iterate through array of objects
+  // identify the option elements in the nested option object array
+  // identify go to element in both option elements
+  // return prompt that corresponds to go to number
+}
 
 // export {
-//   storyFunction,
+//   getStoryPrompt,
 // }

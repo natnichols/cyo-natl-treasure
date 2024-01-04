@@ -10,7 +10,7 @@
       endings
 */
 
-import { /* storyFunction */ } from "../data/story.js";
+import { getStoryPrompt } from "../data/story.js";
 
 /*------- Variables (state) -------*/
 
