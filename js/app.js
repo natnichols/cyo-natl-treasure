@@ -35,6 +35,7 @@ const imgPromptContainer = document.getElementById('img-prompt-container')
 const imageEl = document.getElementsByClassName('image')
 const promptEl = document.getElementsByClassName('prompt')
 const optionContainer = document.getElementById('option-container')
+const optionButtons = document.getElementsByClassName('option')
 const opt1BtnEl = document.getElementById('option1')
 const opt2BtnEl = document.getElementById('option2')
 
@@ -81,52 +82,72 @@ function init() {
 function handleClick(evt) {
   console.log(`I clicked ${evt.target.id}!`)
   const newStory = updateStory()
-  story.push(newStory) /*change to .splice? need to add idx stuff to render() and other update functions to make it work */
+  story.push(newStory)
   console.log(story)
   render()
 }
 
 function render() {
-  imgPromptContainer.innerHTML = ''
   story.forEach((storyEl, idx) => {
     updateStory(storyEl, idx)
   })
 }
 
 function updateStory(storyEl, idx) {
+  imgPromptContainer.innerHTML = ''
   updateImage(storyEl, idx)
   updatePrompt(storyEl, idx)
+  optionContainer.innerHTML = ''
+  updateOptions(storyEl, idx)
   story.splice(idx, 1)
   // imgPromptContainer.style.background = 'orange'
-  // updateOptions()
 }
 
 function updateImage(storyEl, idx) {
-  let newStoryImage = document.createElement("div")
-  newStoryImage.className = `image`
-  newStoryImage.innerHTML =
+  let newImage = document.createElement("div")
+  newImage.className = `image`
+  newImage.innerHTML =
   /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
   `<div>
     <p>'new image!'</p>
   </div>`
-  newStoryImage.style.background = 'pink'
-  imgPromptContainer.appendChild(newStoryImage)
+  newImage.style.background = 'pink'
+  imgPromptContainer.appendChild(newImage)
 }
 
 function updatePrompt(storyEl, idx) {
-  let newStoryPrompt = document.createElement("div")
-  newStoryPrompt.className = `prompt`
-  newStoryPrompt.innerHTML =
+  let newPrompt = document.createElement("div")
+  newPrompt.className = `prompt`
+  newPrompt.innerHTML =
   /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
   `<div>
     <p>'new prompt!'</p>
   </div>`
-  newStoryPrompt.style.background = 'white'
-  imgPromptContainer.appendChild(newStoryPrompt)
+  newPrompt.style.background = 'white'
+  imgPromptContainer.appendChild(newPrompt)
 }
 
 function updateOptions(storyEl, idx) {
-  
+  let newOption1 = document.createElement("button")
+  newOption1.className = `option`
+  newOption1.id = `option1`
+  newOption1.innerHTML =
+  /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
+  `<button>
+    <p>'new option!'</p>
+  </button>`
+  newOption1.style.background = 'green'
+  optionContainer.appendChild(newOption1)
+  let newOption2 = document.createElement("button")
+  newOption2.className = `option`
+  newOption2.id = `option2`
+  newOption2.innerHTML =
+  /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
+  `<button>
+    <p>'new option!'</p>
+  </button>`
+  newOption2.style.background = 'green'
+  optionContainer.appendChild(newOption2)
 }
 
 /*
