@@ -10,6 +10,7 @@
       endings
 */
 
+import { /* storyFunction */ } from "../data/story.js";
 
 /*------- Variables (state) -------*/
 
