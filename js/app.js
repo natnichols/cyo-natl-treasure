@@ -81,50 +81,51 @@ function init() {
 function handleClick(evt) {
   console.log(`I clicked ${evt.target.id}!`)
   const newStory = updateStory()
-  story.push(newStory)
+  story.push(newStory) /*change to .splice? need to add idx stuff to render() and other update functions to make it work */
   console.log(story)
   render()
 }
 
 function render() {
   imgPromptContainer.innerHTML = ''
-  story.forEach(storyEl => {
-    updateStory()
+  story.forEach((storyEl, idx) => {
+    updateStory(storyEl, idx)
   })
 }
 
-function updateStory() {
-  updateImage()
-  updatePrompt()
-  imgPromptContainer.style.background = 'orange'
+function updateStory(storyEl, idx) {
+  updateImage(storyEl, idx)
+  updatePrompt(storyEl, idx)
+  story.splice(idx, 1)
+  // imgPromptContainer.style.background = 'orange'
   // updateOptions()
 }
 
-function updateImage() {
-  let storyImage = document.createElement("div")
-  storyImage.className = `image`
-  storyImage.innerHTML =
+function updateImage(storyEl, idx) {
+  let newStoryImage = document.createElement("div")
+  newStoryImage.className = `image`
+  newStoryImage.innerHTML =
   /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
   `<div>
     <p>'new image!'</p>
   </div>`
-  storyImage.style.background = 'pink'
-  imgPromptContainer.appendChild(storyImage)
+  newStoryImage.style.background = 'pink'
+  imgPromptContainer.appendChild(newStoryImage)
 }
 
-function updatePrompt() {
-  let storyPrompt = document.createElement("div")
-  storyPrompt.className = `prompt`
-  storyPrompt.innerHTML =
+function updatePrompt(storyEl, idx) {
+  let newStoryPrompt = document.createElement("div")
+  newStoryPrompt.className = `prompt`
+  newStoryPrompt.innerHTML =
   /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
   `<div>
     <p>'new prompt!'</p>
   </div>`
-  storyPrompt.style.background = 'white'
-  imgPromptContainer.appendChild(storyPrompt)
+  newStoryPrompt.style.background = 'white'
+  imgPromptContainer.appendChild(newStoryPrompt)
 }
 
-function updateOptions() {
+function updateOptions(storyEl, idx) {
   
 }
 

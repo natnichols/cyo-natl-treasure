@@ -80,7 +80,7 @@ button:hover {
 }
 
 #img-prompt-container {
-  background-color: darkgoldenrod;
+  background-color: rgba(184, 135, 11, 0.299);
   display: flex;
   flex-direction: column;
   height: 500px;
@@ -150,12 +150,19 @@ button.option {
   font-weight: 500;
 }
 
+
 button#option1 {
   background-color: pink;
 }
 
 button#option2 {
   background-color: lightseagreen;
+}
+
+button.option:hover {
+  color: #FFFAE3;
+  background-color: darkgoldenrod;
+  cursor: pointer;
 }
 
 /* .flex-option {
