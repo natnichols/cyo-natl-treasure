@@ -1,120 +1,139 @@
 
-const story = [
+const storyEls = [
   {
-    imageEl: `image file`,
-    promptNumber: 1,
-    promptEl: `You are on the deck of the Charlotte and you find a door to the hull.`,
+    image: `image file 1`,
+    promptNum: 1,
+    prompt: `You are on the deck of the Charlotte and you find a door to the hull.`,
     options: [
       {
-        option1: `Open the door`,
+        opt1: `Open the door`,
         goTo: 3
       },
       {
-        option2: `Have a cigarette first`,
+        opt2: `Have a cigarette first`,
         goTo: 2
       }
     ]
   },
   {
-    imageEl: `image file`,
-    promptNumber: 2,
-    promptEl: `While everyone enjoys a cigarette on the deck of the Charlotte, finish early and look back at the door to the hull.`,
+    image: `image file 2`,
+    promptNum: 2,
+    prompt: `While everyone enjoys a cigarette on the deck of the Charlotte, finish early and look back at the door to the hull.`,
     options: [
       {
-        option1: `Tell the group to finish up so we can explore the hull together`,
+        opt1: `Tell the group to finish up so we can explore the hull together`,
         goTo: 4
       },
       {
-        option2: `Explore the hull with Riley`,
+        opt2: `Explore the hull with Riley`,
         goTo: 3
       }
     ]
   },
   {
-    imageEl: `image file`,
-    promptNumber: 3,
-    promptEl: `You and Riley crack open the frozen door and start down the steps into the hull, entering into the sailors barracks, which is mostly filled with hammocks. Ahead there's another door.`,
+    image: `image file 3`,
+    promptNum: 3,
+    prompt: `You and Riley crack open the frozen door and start down the steps into the hull, entering into the sailors barracks, which is mostly filled with hammocks. Ahead there's another door.`,
     options: [
       {
-        option1: `Walk straight through the barracks to the next door.`,
+        opt1: `Walk straight through the barracks to the next door.`,
         goTo: 5
       },
       {
-        option2: `Pause while Riley peeks into one of the hammocks`,
+        opt2: `Pause while Riley peeks into one of the hammocks`,
         goTo: 6
       }
     ]
   },
   {
-    imageEl: `image file`,
-    promptNumber: 4,
-    promptEl: `You and Ian crack open the frozen door together and start down the steps into the hull. The group enters into the sailors barracks, which is mostly filled with hammocks. Ahead there's another door, but the group is still looking around, and Riley appears to be dangerously curious about the contents of the hammocks.`,
+    image: `image file 4`,
+    promptNum: 4,
+    prompt: `You and Ian crack open the frozen door together and start down the steps into the hull. The group enters into the sailors barracks, which is mostly filled with hammocks. Ahead there's another door, but the group is still looking around, and Riley appears to be dangerously curious about the contents of the hammocks.`,
     options: [
       {
-        option1: `Walk straight through the barracks to the next door.`,
+        opt1: `Walk straight through the barracks to the next door.`,
         goTo: 5
       },
       {
-        option2: `Wait while the group inspects the barracks`,
+        opt2: `Wait while the group inspects the barracks`,
         goTo: 7
       }
     ]
   },
   {
-    imageEl: `image file`,
-    promptNumber: 5,
-    promptEl: `You pull open the next door and step into a cargo hold filled with barrels.`,
+    image: `image file 5`,
+    promptNum: 5,
+    prompt: `You pull open the next door and step into a cargo hold filled with barrels.`,
     options: [
       {
-        option1: `Crack open the first barrel you see!`,
+        opt1: `Crack open the first barrel you see!`,
         goTo: 9
       },
       {
-        option2: `Walk around the cargo hold to see if any of the barrels look special`,
+        opt2: `Walk around the cargo hold to see if any of the barrels look special`,
         goTo: 10
       }
     ]
   },
   {
-    imageEl: `image file`,
-    promptNumber: 6,
-    promptEl: `Riley peeks into one of the hammocks to find a very frozen skeleton! Gross! He screams and falls to the ground in fear.`,
+    image: `image file 6`,
+    promptNum: 6,
+    prompt: `Riley peeks into one of the hammocks to find a very frozen skeleton! Gross! He screams and falls to the ground in fear.`,
     options: [
       {
-        option1: `Help Riley up while the rest of the group joins you in the barracks`,
+        opt1: `Help Riley up while the rest of the group joins you in the barracks`,
         goTo: 8
       },
       {
-        option2: `Ignore Riley while he cowers and go to the next door`,
+        opt2: `Ignore Riley while he cowers and go to the next door`,
         goTo: 5
       }
     ]
   },
   {
-    imageEl: `image file`,
-    promptNumber: 7,
-    promptEl: `Riley peeks into one of the hammocks to find a very frozen skeleton! Gross! He screams and falls to the ground in fear.`,
+    image: `image file 7`,
+    promptNum: 7,
+    prompt: `Riley peeks into one of the hammocks to find a very frozen skeleton! Gross! He screams and falls to the ground in fear.`,
     options: [
       {
-        option1: `Help Riley up and ask him if he's okay`,
+        opt1: `Help Riley up and ask him if he's okay`,
         goTo: 8
       },
       {
-        option2: `Ignore Riley while he cowers and go to the next door`,
+        opt2: `Ignore Riley while he cowers and go to the next door`,
         goTo: 5
       }
     ]
   },
 ]
 
+const image = document.querySelector(".image")
+const storyPrompt = document.querySelector(".prompt")
+const optBtn1 = document.querySelector("#option1")
+const optBtn2 = document.querySelector("#option2")
+
 // function that pulls elements from the story array to be used in app.js
-function getStoryPrompt() {
-  // iterate through array of objects
-  // identify the option elements in the nested option object array
-  // identify go to element in both option elements
-  // return prompt that corresponds to go to number
+function next(promptNum) {
+  image.textContent = storyEls.find(
+    storyEl => storyEl.promptNum === promptNum
+  ).image
+  storyPrompt.textContent = storyEls.find(
+    storyEl => storyEl.promptNum === promptNum
+  ).storyPrompt  
+  optBtn1.innerHTML = storyEls.find(
+    storyEl => storyEl.promptNum === promptNum
+  ).options.map(option => `<option value ="${option}">${option}</option>`).join("")
+  optBtn2.innerHTML = storyEls.find(
+    storyEl => storyEl.promptNum === promptNum
+  ).options.map(option => `<option value ="${option}">${option}</option>`).join("")
 }
 
-// export {
-//   getStoryPrompt,
-// }
+
+function init() {
+  next(1)
+}
+
+export {
+  next,
+  init,
+}
