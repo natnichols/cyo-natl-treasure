@@ -61,22 +61,22 @@ init()
 function init() {
   let story = [
     {
-      // imageToDisplay: '..assets/images/whatever.png',
-      // promptNumber: 1,
-      // prompt: 'You enter a room and see a door.',
-      // options: [
-      //   {
-      //     option1: 'Open the door'
-      //     goTo: 3
-      //   }
-      //   {
-      //     option2: 'Examine the room you're currently in'
-      //     goTo: 2
-      //   }
-      // ]
+      imageEl: `image file`,
+      promptNumber: 1,
+      promptEl: 'You are on the deck of the Charlotte and you find a door to the hull.',
+      options: [
+        {
+          option1: `Open the door`,
+          goTo: 3
+        },
+        {
+          option2: `Have a cigarette first`,
+          goTo: 2
+        }
+      ]
     }
   ]
-  console.log(`stort me oop`)
+  render(story)
 }
 
 
@@ -110,7 +110,7 @@ function updateImage(storyEl, idx) {
   newImage.innerHTML =
   /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
   `<div>
-    <p>'new image!'</p>
+    <p>${story.imageEl}</p>
   </div>`
   newImage.style.background = 'pink'
   imgPromptContainer.appendChild(newImage)
@@ -122,20 +122,21 @@ function updatePrompt(storyEl, idx) {
   newPrompt.innerHTML =
   /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
   `<div>
-    <p>'new prompt!'</p>
+    <p>${story.promptEl}</p>
   </div>`
   newPrompt.style.background = 'white'
   imgPromptContainer.appendChild(newPrompt)
 }
 
 function updateOptions(storyEl, idx) {
+  // make this into a forEach loop??
   let newOption1 = document.createElement("button")
   newOption1.className = `option`
   newOption1.id = `option1`
   newOption1.innerHTML =
   /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
   `<button>
-    <p>'new option!'</p>
+    <p>${opt1BtnEl.id}</p>
   </button>`
   newOption1.style.background = 'green'
   optionContainer.appendChild(newOption1)
@@ -145,7 +146,7 @@ function updateOptions(storyEl, idx) {
   newOption2.innerHTML =
   /* consider putting a ternary in this div based on option 1 or 2 --> see appendQuote in Shake-It-Off */
   `<button>
-    <p>'new option!'</p>
+    <p>${opt2BtnEl.id}</p>
   </button>`
   newOption2.style.background = 'green'
   optionContainer.appendChild(newOption2)
