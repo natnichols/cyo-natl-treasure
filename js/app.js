@@ -64,6 +64,7 @@ const imgElement = document.getElementById('image')
 const promptElement = document.getElementById('prompt')
 const button1Element = document.getElementById('opt-btn-1')
 const button2Element = document.getElementById('opt-btn-2')
+const restartButtonElement = document.getElementById('restart')
 
   /* -------------- v v v - old code within - v v v -------------- 
   const storyContainer = document.getElementById('story-container')
@@ -82,6 +83,7 @@ const button2Element = document.getElementById('opt-btn-2')
 /* --------------------------------- Event Listeners --------------------------------- */
 button1Element.addEventListener('click', handleClickButton1)
 button2Element.addEventListener('click', handleClickButton2)
+restartButtonElement.addEventListener('click', init)
 
 /* ----------- v v v - old code + pseudo below - v v v ----------- 
 /* option buttons
