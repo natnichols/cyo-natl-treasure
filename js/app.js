@@ -49,6 +49,7 @@ function handleClickButton1() {
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'
     button2Element.style.display = 'none'
+    confetti.start(2000)
   }
   if (losingIdxVals.includes(newIdx)) {
     // game has been lost
@@ -73,6 +74,7 @@ function handleClickButton2() {
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'
     button2Element.style.display = 'none'
+    confetti.start(2000)
   }
   if (losingIdxVals.includes(newIdx)) {
     // game has been lost

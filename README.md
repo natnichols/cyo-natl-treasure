@@ -42,6 +42,7 @@ If you don't like how your hunt is going and you regret some of your choices, cl
   - [ ] With animations
 - [ ] Pre-Main Menu screen animation
   - [ ] Image of all-seeing eye (holographic, transparent) slowly blinking/fading in and out on opening screen, something clearly clickable (‘start’ or ‘open’ as a placeholder) clearly indicating to the player that when they click they will be taken to a start/main menu screen
+- [ ] Start/Main Menu screen that loads before game starts, containing the game title, an image, and a button to click to start the game. Also leaves room in the display for more buttons to be added as icebox features are added.
 - [ ] Ability for user to save and load unfinished games
   - [ ] Would add Load Game button to main menu that, when clicked, renders a message to the user to click on on the save file they want to load, and 3 clickable containers that correspond to up to 3 different save files
   - [ ] Potentially add ability to save even more than 3 files
