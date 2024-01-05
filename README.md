@@ -13,7 +13,7 @@
 
 # Hunt Your Own National Treasure
 
-#### A Choose Your Own Adventure Game inspired by the cinematic masterpiece National Treasure (2004)
+#### A Choose Your Own Adventure Game inspired by the cinematic masterpiece _National Treasure_ (2004)
 
 ### _(insert screenshot from movie here)_
 
@@ -48,22 +48,21 @@ If you don't like how your hunt is going and you regret some of your choices, cl
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ## Ice Box 🧊
-- [ ] Confetti!
 - [ ] Mobile responsiveness
 - [ ] Light/Dark Mode
 - [ ] Fun cursor
 - [ ] Intro sequence (model after Christopher Plummer scene) summarizing the lore of the National Treasure and intro-ing you to where you are at the beginning of the story 
   - [ ] With animations
-- [ ] Pre-Main Menu screen animation?
+- [ ] Pre-Main Menu screen animation
   - [ ] Image of all-seeing eye (holographic, transparent) slowly blinking/fading in and out on opening screen, something clearly clickable (‘start’ or ‘open’ as a placeholder) clearly indicating to the player that when they click they will be taken to a start/main menu screen
 - [ ] Ability for user to save and load unfinished games
   - [ ] Would add Load Game button to main menu that, when clicked, renders a message to the user to click on on the save file they want to load, and 3 clickable containers that correspond to up to 3 different save files
-  - [ ]Potentially add ability to save even more than 3 files
+  - [ ] Potentially add ability to save even more than 3 files
 - [ ] Toggle sound on/off button
 - [ ] Cheat code features (player loads game and types out a code before clicking anything)
   - [ ] Accurate DC Traffic Laws Mode
   - [ ] Confetti Mode
-- [ ] Romantic Tension Mode (would still be 2000’s Disney PG rated)
+  - [ ] Romantic Tension Mode (would still be 2000’s Disney PG rated)
   - [ ] Sean Bean Mode (player swaps characters and plays through the game as Sean Bean’s character, Ian)
     - [ ] This icebox feature is extra icy - obviously a large undertaking bc it will essentially mean rewriting a second version of the game, but from Ian’s POV
 - [ ] Computer player
@@ -77,10 +76,10 @@ If you don't like how your hunt is going and you regret some of your choices, cl
     - [ ] Travel from DC to Philadelphia and NYC while continuing to protect the Declaration from Ian, run from the FBI, and find more clues to the treasure
     - [ ] Find the treasure and decide what to do with it! (If you can escape the underground caverns where it’s hidden!)
 - [ ] Player settings button - renders container with message + menu of buttons the user can click to:
-  - [ ] Adjust sound volume
-  - [ ] Save game
-  - [ ] Start Over
-  - [ ] Return to menu
+  - Adjust sound volume
+  - Save game
+  - Start Over
+  - Return to menu
   - [ ] if Settings button can be built in, additional goal would be to only keep these buttons in a Settings menu, and no longer render them individually on screen while the game is being played
 
 
