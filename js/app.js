@@ -3,8 +3,8 @@ import {storyObjs} from '../data/story.js'
 
 /* --------------------------------- Variables (state) --------------------------------- */
 let promptIdx
-let winningIdxVals = [7, 8] /* TEMP VALS UNTIL STORY IS COMPLETE */
-let losingIdxVals = [9] /* TEMP VALS UNTIL STORY IS COMPLETE */
+let winningIdxVals = [7] /* TEMP VALS UNTIL STORY IS COMPLETE */
+let losingIdxVals = [8, 9] /* TEMP VALS UNTIL STORY IS COMPLETE */
 
 /* --------------------------------- Cached Element References --------------------------------- */
 

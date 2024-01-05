@@ -3,7 +3,7 @@ const storyObjs = [
   {
     image: '../assets/images/image0.jpeg',
     promptNum: 0,
-    prompt: `You are on the deck of the Charlotte and you find a door to the hull.`,
+    prompt: `Your grandfather once shared the last known clue to find the treasure - "The Secret lies with Charlotte". "The Charlotte" was long suspected to be a ship lost at sea. After a long snowmobile ride through the Arctic, you, joined by Riley, Ian, and Ian's team, have finally found the Charlotte buried in the snow. After unearthing the ship, you step onto the deck you find a door to the hull.`,
     options: [
       {
         opt1: `Open the door`,
@@ -108,19 +108,22 @@ const storyObjs = [
   {
     image: '../assets/images/CHUGCHAMPAGNEWINNER.jpeg',
     promptNum: 7,
-    prompt: `YOU'VE WON! Want to start a new treasure hunt? Click the Restart button to play again!`,
+    prompt: `YOU'VE WON! The Declaration is yours and with it the map to the treasure.
+    Want to start a new treasure hunt? Click the Restart button to play again!`,
     // option buttons are removed from display, no Options object needed
   },
   {
-    image: '../assets/images/ALTWINNER.jpeg',
+    image: '../assets/images/LOSECaughtByAbigail.jpeg',
     promptNum: 8,
-    prompt: `YOU'VE WON IN A DIFFERENT WAY! Want to start a new treasure hunt? Click the Restart button to play again!`,
+    prompt: `You lost! You successfully stole the Declaration before Ian, but you were caught by Abigail before Riley could drive you away. 
+    Want to start a new treasure hunt? Click the Restart button to play again!`,
     // option buttons are removed from display, no Options object needed
   },
   {
-    image: '../assets/images/LOSERPLACEHOLDER.jpeg',
+    image: '../assets/images/LOSECaughtByFBI.jpeg',
     promptNum: 9,
-    prompt: `YOU LOST :( Want to try again from the beginning? Click the Restart button to play again!`,
+    prompt: `You lost! While you successfully stole the Declaration from the National Archives, the FBI tracked you down and you were arrested. Someone's got to go to prison, Ben! 
+    Want to try again from the beginning? Click the Restart button to play again!`,
     // option buttons are removed from display, no Options object needed
   },
 ]

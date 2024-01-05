@@ -2,17 +2,15 @@
 
 #### A Choose Your Own Adventure Game inspired by the cinematic masterpiece _National Treasure_ (2004)
 
-### _(insert screenshot from movie here)_
+
 
 > "Ben, you can't steal the Declaration of Independence. It's like stealing a national monument...not that it _can't_ be done - but it ***_shouldn't_*** be done."
 
-
+![Screenshot of the first page of the game](../assets/images/gameScreenshotFirstPage.jpeg)
 
 Your name is Benjamin Franklin Gates, you are the last of a line of discgraced treasure hunters, and you are determined to find the infamous Knights Templar Treasure that your grandfather told you about as a kid. You have put together a team: your trusty tech buddy Riley Poole, your benefactor Ian, and Ian's group of henchmen. Together, you're going to find the treasure and redeem your family's name.
 
 But to find a treasure, you need a map. And what better place for the map to be hidden than on the back of the Declaration of Independence? But you can't exactly...borrow it.
-
-### _(insert screenshot from game here)_
 
 The goal of this game is to successfully steal the Declaration of Independence. As you move through the story, you will be presented with a decision to make and two option buttons to choose from. Each time you click an option button, you will advance the story into a new scene in your own unique adventure. Choose wisely, and your hunt will end in success! Choose poorly, and the fate of your hunt could be ruinous.
 
@@ -20,7 +18,7 @@ If you don't like how your hunt is going and you regret some of your choices, cl
 
 ## So, do you think you can steal the Declaration of Independence? [Start Your Hunt Here](http://natl-treasure-cyoadventure.netlify.app "Hunt Your Own National Treasure") 📜
 
-### _(insert screenshot from game here)_
+![Screenshot of the winning page of the game](../assets/images/WinnerScreenshot.jpeg)
 
 ### [View my Planning Materials](https://docs.google.com/document/d/1ZFDcidKbpyUpEmeshoS9aI2OC8LTM0BoioFQvgvnPTU/edit?usp=sharing "Hunt Your Own National Treasure Planning Materials") 🗒
 
