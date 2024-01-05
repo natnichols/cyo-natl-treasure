@@ -1,7 +1,7 @@
 
 const storyObjs = [
   {
-    image: `image file 0`,
+    image: '../assets/images/image0.jpeg',
     promptNum: 0,
     prompt: `You are on the deck of the Charlotte and you find a door to the hull.`,
     options: [
@@ -16,7 +16,7 @@ const storyObjs = [
     ]
   },
   {
-    image: `image file 1`,
+    image: '../assets/images/image1.jpeg',
     promptNum: 1,
     prompt: `You explore the deck but don't see anything remarkable. While Ian's crew looks around, you walk back to the door to the hull with Riley.`,
     options: [
@@ -31,7 +31,7 @@ const storyObjs = [
     ]
   },
   {
-    image: `image file 2`,
+    image: '../assets/images/image2.jpeg',
     promptNum: 2,
     prompt: `You and Riley crack open the frozen door and start down the steps into the hull, entering into the sailors barracks, which is mostly filled with hammocks. Ahead there's another door.`,
     options: [
@@ -46,7 +46,7 @@ const storyObjs = [
     ]
   },
   {
-    image: `image file 3`,
+    image: '../assets/images/image3.jpeg',
     promptNum: 3,
     prompt: `You and Ian crack open the frozen door together and start down the steps into the hull. The group enters into the sailors barracks, which is mostly filled with hammocks. Ahead there's another door, but the group is still looking around, and Riley appears to be dangerously curious about the contents of the hammocks.`,
     options: [
@@ -61,7 +61,7 @@ const storyObjs = [
     ]
   },
   {
-    image: `image file 4`,
+    image: '../assets/images/image4.jpeg',
     promptNum: 4,
     prompt: `You pull open the next door and step into a cargo hold filled with barrels.`,
     options: [
@@ -76,7 +76,7 @@ const storyObjs = [
     ]
   },
   {
-    image: `image file 5`,
+    image: '../assets/images/image5.jpeg',
     promptNum: 5,
     prompt: `Riley peeks into one of the hammocks to find a very frozen skeleton! Gross! He screams and falls to the ground in fear.`,
     options: [
@@ -91,7 +91,7 @@ const storyObjs = [
     ]
   },
   {
-    image: `image file 6`,
+    image: '../assets/images/image5.jpeg',
     promptNum: 6,
     prompt: `Riley peeks into one of the hammocks to find a very frozen skeleton! Gross! He screams and falls to the ground in fear.`,
     options: [
