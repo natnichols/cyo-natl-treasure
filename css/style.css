@@ -46,6 +46,7 @@ h1 {
 }
 
 /* menu & restart buttons don't have individual styling yet - below is placeholder default button styling */
+/* specify this as for #restart? or keep id-less while there's no menu button? Will menu button look the same anyway? */
 button {
   margin: 5px;
   border-radius: 5px;
@@ -62,7 +63,6 @@ button:hover {
   background-color: darkgoldenrod;
   cursor: pointer;
 }
-
 /* ^^^ Default button styling above ^^^ */
 
 #story-container {
@@ -93,7 +93,7 @@ button:hover {
   border-color: lightgoldenrodyellow;
 }
 
-.image {
+#image {
   background-color: rgba(255, 255, 224, 0.5);
   color: black;
   height: 325px;
@@ -110,7 +110,7 @@ button:hover {
   border-color: darkgoldenrod;
 }
 
-.prompt {
+#prompt {
   background-color: lightgoldenrodyellow;
   color: darkslategrey;
   height: 75px;
@@ -141,7 +141,7 @@ button:hover {
   border-color: black;
 }
 
-button.option {  
+button.option-button {  
   margin: 5px;
   border-radius: 5px;
   color: black;
@@ -151,15 +151,15 @@ button.option {
 }
 
 
-button#option1 {
+button#opt-btn-1 {
   background-color: pink;
 }
 
-button#option2 {
+button#opt-btn-2 {
   background-color: lightseagreen;
 }
 
-button.option:hover {
+button.option-button:hover {
   color: #FFFAE3;
   background-color: darkgoldenrod;
   cursor: pointer;
@@ -202,14 +202,14 @@ button.option:hover {
     padding: 5px;
     justify-content: space-around;
   }
-  .image {
+  #image {
     background-color: goldenrod;
     border-style: dotted;
     border-color: lightgoldenrodyellow;
     /* height: 750px; */
     /* width: 1350px; */
   }
-  .prompt {
+  #prompt {
     background-color: rgb(251, 224, 153);
     color: black;
     border-style: dotted;
@@ -217,7 +217,7 @@ button.option:hover {
     /* height: 100px; */
     /* width: 1350px; */
   }
-  button#option1, button#option2 {
+  button#restart, button#opt-btn-1, button#opt-btn-2 {
     background-color: lightgreen;
   }
   /* .flex-option {

@@ -1,5 +1,5 @@
 
-const storyEls = [
+const storyObjs = [
   {
     image: `image file 1`,
     promptNum: 1,
@@ -10,7 +10,7 @@ const storyEls = [
         goTo: 3
       },
       {
-        opt2: `Have a cigarette first`,
+        opt2: `Explore the deck first`,
         goTo: 2
       }
     ]
@@ -18,10 +18,10 @@ const storyEls = [
   {
     image: `image file 2`,
     promptNum: 2,
-    prompt: `While everyone enjoys a cigarette on the deck of the Charlotte, finish early and look back at the door to the hull.`,
+    prompt: `You explore the deck but don't see anything remarkable. While Ian's crew looks around, you walk back to the door to the hull with Riley.`,
     options: [
       {
-        opt1: `Tell the group to finish up so we can explore the hull together`,
+        opt1: `Gather the whole group to explore the hull together`,
         goTo: 4
       },
       {
@@ -107,6 +107,11 @@ const storyEls = [
   },
 ]
 
+export {
+  storyObjs,
+}
+
+/* ----------- v v v - old code + pseudo below - v v v ----------- */
 // const image = document.querySelector(".image")
 // const storyPrompt = document.querySelector(".prompt")
 // const optBtn1 = document.querySelector("#option1")
@@ -128,8 +133,4 @@ const storyEls = [
 //     storyEl => storyEl.promptNum === promptNum
 //   ).options.map(option => `<option value ="${option.opt2}">${option.opt2}</option>`).join("")
 // }
-
-
-export {
-  storyEls,
-}
+/* ----------- ^ ^ ^ - old code + pseudo above - ^ ^ ^ ----------- */

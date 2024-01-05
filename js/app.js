@@ -1,93 +1,186 @@
-/*------- Constants -------*/
 
-/* 
-  Imports from Data files: 
-    audio
-    images 
-    story 
-      prompts
-      options 
-      endings
-*/
 
-import { storyEls } from "../data/story.js";
+// {
+  //   image: `image file 1`,
+  //   promptNum: 1,
+  //   prompt: `You are on the deck of the Charlotte and you find a door to the hull.`,
+  //   options: [
+    //     {
+      //       opt1: `Open the door`,
+      //       goTo: 3
+      //     },
+      //     {
+        //       opt2: `Explore the deck first`,
+        //       goTo: 2
+        //     }
+        //   ]
+        // }
+        
 
-/*------- Variables (state) -------*/
 
-/* LET (DON'T NEED TO HOLD VALUES YET - DO THAT IN INIT FUNCTION)
+/* ---------------------------------------------------------------------------- */
+
+
+/* --------------------------------- Constants --------------------------------- */
+import {storyObjs} from './data/story.js'
+
+  /* ----------- v v v - old code + pseudo below - v v v ----------- 
+  / Imports from Data files: 
+  audio
+  images 
+  story 
+  prompts
+  options 
+  endings
+  */
+  //  import { storyEls } from "../data/story.js";
+  /* ----------- ^ ^ ^ - old code + pseudo above - ^ ^ ^ ----------- */
+
+/* --------------------------------- Variables (state) --------------------------------- */
+let promptIdx
+let winningIdxVals = [/*12, 15, 16*/]
+let losingIdxVals = [/*2, 3, 6*/]
+
+  /* ----------- v v v - old code + pseudo below - v v v ----------- 
+  /* LET (DON'T NEED TO HOLD VALUES YET - 
+  DO THAT IN INIT FUNCTION)
   story (OBJECT)
-    image
-    prompt
-    options
-    ending
+  image
+  prompt
+  ending
+  options
   win
   lose
-*/
+  */
+  // let win, lose
+  // let story = []
+  /* ----------- ^ ^ ^ - old code + pseudo above - ^ ^ ^ ----------- */
 
-let story = []
-let win, lose
 
 
-/*------- Cached Element References -------*/
+/* --------------------------------- Cached Element References --------------------------------- */
 
-// const storyContainer = document.getElementById('story-container')
-// const imgPromptContainer = document.getElementById('img-prompt-container')
-// const imageEl = document.getElementsByClassName('image')
-// const promptEl = document.getElementsByClassName('prompt')
-// const optionContainer = document.getElementById('option-container')
-// const optionButtons = document.getElementsByClassName('option')
-const restartBtnEl = document.querySelector('#restart')
-const image = document.querySelector(".image")
-const storyPrompt = document.querySelector(".prompt")
-const optBtn1 = document.getElementById('option1')
-const optBtn2 = document.getElementById('option2')
+const imgElement = document.getElementById('image')
+const promptElement = document.getElementById('prompt')
+const button1Element = document.getElementById('opt-btn-1')
+const button2Element = document.getElementById('opt-btn-2')
 
-/*------- Event Listeners -------*/
+  /* -------------- v v v - old code within - v v v -------------- 
+  const storyContainer = document.getElementById('story-container')
+  const imgPromptContainer = document.getElementById('img-prompt-container')
+  const imageEl = document.getElementsByClassName('image')
+  const promptEl = document.getElementsByClassName('prompt')
+  const optionContainer = document.getElementById('option-container')
+  const optionButtons = document.getElementsByClassName('option')
+  const restartBtnEl = document.querySelector('#restart')
+  const image = document.querySelector(".image")
+  const storyPrompt = document.querySelector(".prompt")
+  const optBtn1 = document.getElementById('option1')
+  const optBtn2 = document.getElementById('option2')
+  -------------- ^ ^ ^ - old code above - ^ ^ ^ -------------- */
 
-/* 
-  option buttons
-  reset button?
-  any other clickables?
-*/
+/* --------------------------------- Event Listeners --------------------------------- */
+button1Element.addEventListener('click', handleClickButton1)
+button2Element.addEventListener('click', handleClickButton2)
 
-restartBtnEl.addEventListener('click', init)
-// optBtn1.addEventListener('click', optionClick)
-// optBtn2.addEventListener('click', optionClick)
-optBtn1.addEventListener('click', next(option1))
-optBtn2.addEventListener('click', next(option2))
+/* ----------- v v v - old code + pseudo below - v v v ----------- 
+/* option buttons
+reset button?
+any other clickables?*/
+//  restartBtnEl.addEventListener('click', init)
+//  optBtn1.addEventListener('click', optionClick)
+//  optBtn2.addEventListener('click', optionClick)
+//  // optBtn1.addEventListener('click', next(option1))
+//  // optBtn2.addEventListener('click', next(option2))
+/* ----------- ^ ^ ^ - old code + pseudo above - ^ ^ ^ ----------- */
 
-/*------- Functions -------*/
+/* --------------------------------- Functions  --------------------------------- */
+console.log(`Mulder, we're gonna steal the Declaration of Independence`)
 
-// console.log(`Mulder, we're gonna steal the Declaration of Independence`)
 
 init()
 
 function init() {
-  render()
+  promptIdx = 0
+  showQuest(promptIdx)
 }
 
-function render() {
-  image.innerHTML = ''
-  story.forEach((storyEl, idx) => {
-    next(storyEl, idx)
-  })
+function showQuest(nextIdx) {
+  // display a question based on its index in the storyObjs array
+  imgElement.setAttribute('src', storyObjs[nextIdx].image)
+  promptElement.textContent = storyObjs[nextIdx].prompt
+  button1Element.textContent = storyObjs[nextIdx].options[0].opt1
+  button2Element.textContent = storyObjs[nextIdx].options[1].opt2
 }
 
-function next(promptNum) {
-  image.textContent = storyEls.find(
-    storyEl => storyEl.promptNum === storyEl.image
-  )
-  storyPrompt.textContent = storyEls.find(
-    storyEl => storyEl.promptNum === storyEl.prompt
-  )
-  /* currently option buttons are showing the full options array instead of just the object that corresponds to opt1 or opt2 */
-  optBtn1.innerHTML = storyEls.find(
-    storyEl => storyEl.promptNum === promptNum
-  ).options.map((option, idx) => (`<option value ="${option.opt1}">${option.opt1}</option>`)).join("")
-  optBtn2.innerHTML = storyEls.find(
-    storyEl => storyEl.promptNum === promptNum
-  ).options.map((option, idx) => (`<option value ="${option.opt2}">${option.opt2}</option>`)).join("")
+
+
+function handleClickButton1() {
+  let newIdx = storyObjs[promptIdx].options[0].goTo
+  promptIdx = newIdx
+  if (winningIdxVals.includes(newIdx)) {
+    // game has been won
+    // stop timer
+    // take away button display
+  }
+  if (losingIdxVals.includes(newIdx)) {
+    // game has been lost
+    // stop timer
+    // take away button display
+  }
+  showQuest(newIdx)
 }
+
+
+
+function handleClickButton2() {
+  let newIdx = storyObjs[promptIdx].options[1].goTo
+  promptIdx = newIdx
+  if (winningIdxVals.includes(newIdx)) {
+    // game has been won
+    // stop timer
+    // take away button display
+  }
+  if (losingIdxVals.includes(newIdx)) {
+    // game has been lost
+    // stop timer
+    // take away button display
+  }
+  showQuest(newIdx)
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* ----------- v v v - old function code + pseudo below - v v v ----------- */
+// init()
+
+// function init() {
+//   render()
+// }
+
+// function render() {
+//   image.innerHTML = ''
+//   story.forEach((storyEl, idx) => {
+//     next(storyEl, idx)
+//   })
+// }
+
+// // function next(promptNum) {
+// //   image.textContent = storyEls.find(
+// //     storyEl => storyEl.promptNum === storyEl.image
+// //   )
+// //   storyPrompt.textContent = storyEls.find(
+// //     storyEl => storyEl.promptNum === storyEl.prompt
+// //   )
+// //   /* currently option buttons are showing the full options array instead of just the object that corresponds to opt1 or opt2 */
+// //   optBtn1.innerHTML = storyEls.find(
+// //     storyEl => storyEl.promptNum === promptNum
+// //   ).options.map((option, idx) => (`<option value ="${option.opt1}">${option.opt1}</option>`)).join("")
+// //   optBtn2.innerHTML = storyEls.find(
+// //     storyEl => storyEl.promptNum === promptNum
+// //   ).options.map((option, idx) => (`<option value ="${option.opt2}">${option.opt2}</option>`)).join("")
+// // }
 
 // function optionClick(evt) {
 //   console.log(`I clicked ${evt.target.id}!`)
@@ -160,51 +253,4 @@ function next(promptNum) {
 //   newOption2.style.background = 'green'
 //   optionContainer.appendChild(newOption2)
 // }
-
-/*
-  init()
-    story (OBJECT) =
-      image
-      prompt
-      options
-      ending
-    win =
-    lose =
-    render()
-  handleClick()
-  checkForWin()
-  checkForLose()
-  checkForEnding()
-  updateStory()
-  updateImage()
-  updatePrompt()
-  updateOptions()
-  render()
- */
-
-
-/* ESTABLISH INIT SKELETON - USE CURRENT WIREFRAME FOR ALL RENDERINGS FOR NOW AND WORRY ABOUT ADJUSTING LAYOUT BETWEEN START SCREEN>PROMPT 1 LATER! (THERE WILL BE AN EXTRA BUTTON ON THE START SCREEN FOR A SEC, DEAL WITH IT) */
-
-
-
-/*------- example from Ben for game state variable (object) (to use for init function?) (or was it a constant to be put in a data file?):
-
-let story = [
-  {
-    promptNumber: 1,
-    imageToDisplay: '..assets/images/whatever.png',
-    prompt: 'You enter a room and see a door.',
-    options: [
-      {
-        option1: 'Open the door'
-        goTo: 3
-      }
-      {
-        option2: 'Examine the room you're currently in'
-        goTo: 2
-      }
-    ]
-  }
-]
-(was a render function somewhere in there??)
--------*/
+/* ----------- ^ ^ ^ - old function code + pseudo above - ^ ^ ^ ----------- */
