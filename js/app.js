@@ -22,7 +22,7 @@
 
 
 /* --------------------------------- Constants --------------------------------- */
-import {storyObjs} from './data/story.js'
+import {storyObjs} from '../data/story.js'
 
   /* ----------- v v v - old code + pseudo below - v v v ----------- 
   / Imports from Data files: 
