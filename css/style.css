@@ -2,13 +2,6 @@ html {
   box-sizing: border-box
 }
 
-/* The Universal Selector
-/* asterisk = All elements */
-/* All ::before pseudo-elements */
-/* All ::after pseudo-elements */
-/* height & width will now include border & padding by default
-but can be over-ridden as needed */
-
 *, 
 *::before,
 *::after { 
@@ -165,39 +158,20 @@ button.option-button:hover {
   cursor: pointer;
 }
 
-/* .flex-option {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-style: dotted;
-  border-color: lightgoldenrodyellow;
-  background-color: darkgoldenrod;
-  margin: 5px;
-  width: 500px;
-} */
-
 
 @media only screen and (max-width: 1024px) {
   body {
     background-color: rgb(253, 219, 132);
   }
   #flex-story-container {
-    /* flex-direction: column; 
-    add sizing scaling */
     background-color: darkgoldenrod;
   }
   #img-prompt-container {
-    /* height: 175px; */
-    /* add sizing scaling */
-    /* flex-direction: column; */
     background-color: darkgoldenrod;
     padding: 5px;
     justify-content: space-around;
   }
   #option-container {
-    /* height: 175px; */
-    /* add sizing scaling */
-    /* flex-direction: column; */
     background-color: darkgoldenrod;
     padding: 5px;
     justify-content: space-around;
@@ -206,24 +180,14 @@ button.option-button:hover {
     background-color: goldenrod;
     border-style: dotted;
     border-color: lightgoldenrodyellow;
-    /* height: 750px; */
-    /* width: 1350px; */
   }
   #prompt {
     background-color: rgb(251, 224, 153);
     color: black;
     border-style: dotted;
     border-color: goldenrod;
-    /* height: 100px; */
-    /* width: 1350px; */
   }
   button#restart, button#opt-btn-1, button#opt-btn-2 {
     background-color: lightgreen;
   }
-  /* .flex-option {
-    border-style: dotted;
-    border-color: lightgoldenrodyellow;
-    background-color: goldenrod;
-    display: flex;
-  } */
 }
