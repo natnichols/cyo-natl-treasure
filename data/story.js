@@ -111,26 +111,3 @@ export {
   storyObjs,
 }
 
-/* ----------- v v v - old code + pseudo below - v v v ----------- */
-// const image = document.querySelector(".image")
-// const storyPrompt = document.querySelector(".prompt")
-// const optBtn1 = document.querySelector("#option1")
-// const optBtn2 = document.querySelector("#option2")
-
-// function that pulls elements from the story array to be used in app.js
-// function next(promptNum) {
-//   image.textContent = storyEls.find(
-//     storyEl => storyEl.promptNum === promptNum
-//   ).image
-//   storyPrompt.textContent = storyEls.find(
-//     storyEl => storyEl.promptNum === promptNum
-//   ).storyPrompt
-//   /* currently option buttons are showing the full options array instead of just the object that corresponds to opt1 or opt2 */
-//   optBtn1.innerHTML = storyEls.find(
-//     storyEl => storyEl.promptNum === promptNum
-//   ).options.map(option => `<option value ="${option.opt1}">${option.opt1}</option>`).join("")
-//   optBtn2.innerHTML = storyEls.find(
-//     storyEl => storyEl.promptNum === promptNum
-//   ).options.map(option => `<option value ="${option.opt2}">${option.opt2}</option>`).join("")
-// }
-/* ----------- ^ ^ ^ - old code + pseudo above - ^ ^ ^ ----------- */
