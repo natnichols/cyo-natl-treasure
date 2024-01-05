@@ -20,12 +20,11 @@ If you don't like how your hunt is going and you regret some of your choices, cl
 
 ![Screenshot of the winning page of the game](http://natl-treasure-cyoadventure.netlify.app/assets/images/WinnerScreenshot.jpeg)
 
-### [View my Planning Materials](https://docs.google.com/document/d/1ZFDcidKbpyUpEmeshoS9aI2OC8LTM0BoioFQvgvnPTU/edit?usp=sharing "Hunt Your Own National Treasure Planning Materials") 🗒
-
 ## Attributions 🙌
 * Fonts are from [Google Fonts](https://fonts.google.com/ "Browse Google Fonts"), and additional font research was found in the [r/identifythisfont Subreddit](https://www.reddit.com/r/identifythisfont "r/identifythisfont")
-* Images sourced from [HD/HQ Movie Screencaps Gallery](https://kissthemgoodbye.net/movie/thumbnails.php?album=309 "HD/HQ Movie Screencaps Gallery - kissthemgoodbye.net") and [FanCaps.net](https://fancaps.net/ "FanCaps.net")
+* Images are sourced from [HD/HQ Movie Screencaps Gallery](https://kissthemgoodbye.net/movie/thumbnails.php?album=309 "HD/HQ Movie Screencaps Gallery - kissthemgoodbye.net") and [FanCaps.net](https://fancaps.net/ "FanCaps.net")
 * New methods research found in [MDN Web Docs](https://developer.mozilla.org/en-US/ "MDN Web Docs") and the [r/learnjavascript Subreddit](https://www.reddit.com/r/learnjavascript "r/learnjavascript") 
+* Confetti code is from [GA's SEI Github (Private Repository)](https://github.com/SEI-Remote/confetti/blob/main/confetti.js "SEI-Remote/confetti GitHub Repo")
 
 ## Technologies used 🧰
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -71,4 +70,4 @@ If you don't like how your hunt is going and you regret some of your choices, cl
   - Return to menu
   - [ ] If Settings button can be built in, additional goal would be to only keep these buttons in a Settings menu, and no longer render them individually on screen while the game is being played
 
-
+### [View my Planning Materials](https://docs.google.com/document/d/1ZFDcidKbpyUpEmeshoS9aI2OC8LTM0BoioFQvgvnPTU/edit?usp=sharing "Hunt Your Own National Treasure Planning Materials") 🗒
