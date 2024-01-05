@@ -35,6 +35,7 @@ If you don't like how your hunt is going and you regret some of your choices, cl
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ## Ice Box 🧊
+- [ ] Sound Effects
 - [ ] Mobile responsiveness
 - [ ] Light/Dark Mode
 - [ ] Fun cursor
