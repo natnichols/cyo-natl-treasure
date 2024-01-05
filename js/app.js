@@ -1,26 +1,3 @@
-
-
-// {
-  //   image: `image file 1`,
-  //   promptNum: 1,
-  //   prompt: `You are on the deck of the Charlotte and you find a door to the hull.`,
-  //   options: [
-    //     {
-      //       opt1: `Open the door`,
-      //       goTo: 3
-      //     },
-      //     {
-        //       opt2: `Explore the deck first`,
-        //       goTo: 2
-        //     }
-        //   ]
-        // }
-        
-
-
-/* ---------------------------------------------------------------------------- */
-
-
 /* --------------------------------- Constants --------------------------------- */
 import {storyObjs} from '../data/story.js'
 
