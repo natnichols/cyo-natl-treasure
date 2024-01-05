@@ -102,11 +102,11 @@ init()
 
 function init() {
   promptIdx = 0
-  showQuest(promptIdx)
+  showNextStoryObj(promptIdx)
 }
 
-function showQuest(nextIdx) {
-  // display a question based on its index in the storyObjs array
+function showNextStoryObj(nextIdx) {
+  // display next prompt (+ corresponding image and options) based on its index in the storyObjs array
   imgElement.setAttribute('src', storyObjs[nextIdx].image)
   promptElement.textContent = storyObjs[nextIdx].prompt
   button1Element.textContent = storyObjs[nextIdx].options[0].opt1
@@ -120,15 +120,15 @@ function handleClickButton1() {
   promptIdx = newIdx
   if (winningIdxVals.includes(newIdx)) {
     // game has been won
-    // stop timer
-    // take away button display
+    // display corresponding final image and prompt
+    // replace option buttons with restart button (re-labeled "Start a new treasure hunt?")
   }
   if (losingIdxVals.includes(newIdx)) {
     // game has been lost
-    // stop timer
-    // take away button display
+    // display corresponding final image and prompt
+    // replace option buttons with restart button (re-labeled "Try again?")
   }
-  showQuest(newIdx)
+  showNextStoryObj(newIdx)
 }
 
 
@@ -138,15 +138,15 @@ function handleClickButton2() {
   promptIdx = newIdx
   if (winningIdxVals.includes(newIdx)) {
     // game has been won
-    // stop timer
-    // take away button display
+    // display corresponding final image and prompt
+    // replace option buttons with restart button (re-labeled "Start a new treasure hunt?")
   }
   if (losingIdxVals.includes(newIdx)) {
     // game has been lost
-    // stop timer
-    // take away button display
+    // display corresponding final image and prompt
+    // replace option buttons with restart button (re-labeled "Try again?")
   }
-  showQuest(newIdx)
+  showNextStoryObj(newIdx)
 }
 
 
