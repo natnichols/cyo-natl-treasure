@@ -1,16 +1,3 @@
-## README Requirements (delete this before finalizing)
-* Screenshot: A screenshot or two of your game.	
-* Title: Contains a description of what the game does and optional background info.	
-* Getting Started: Includes a link to the deployed game and any planning materials.	
-* Attributions: Includes links to any external resources (such as libraries or assets) you used to develop your application.	
-* Technologies Used: List of the technologies used.	
-* Next Steps: Planned future enhancements (icebox items).	
-* ***_The README file must be grammatically correct and free of spelling errors._***	
----
----
----
-
-
 # Hunt Your Own National Treasure
 
 #### A Choose Your Own Adventure Game inspired by the cinematic masterpiece _National Treasure_ (2004)
@@ -80,6 +67,6 @@ If you don't like how your hunt is going and you regret some of your choices, cl
   - Save game
   - Start Over
   - Return to menu
-  - [ ] if Settings button can be built in, additional goal would be to only keep these buttons in a Settings menu, and no longer render them individually on screen while the game is being played
+  - [ ] If Settings button can be built in, additional goal would be to only keep these buttons in a Settings menu, and no longer render them individually on screen while the game is being played
 
 
