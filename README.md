@@ -6,7 +6,7 @@
 
 > "Ben, you can't steal the Declaration of Independence. It's like stealing a national monument...not that it _can't_ be done - but it ***_shouldn't_*** be done."
 
-![Screenshot of the first page of the game](../assets/images/gameScreenshotFirstPage.jpeg)
+![Screenshot of the first page of the game](http://natl-treasure-cyoadventure.netlify.app/assets/images/gameScreenshotFirstPage.jpeg)
 
 Your name is Benjamin Franklin Gates, you are the last of a line of discgraced treasure hunters, and you are determined to find the infamous Knights Templar Treasure that your grandfather told you about as a kid. You have put together a team: your trusty tech buddy Riley Poole, your benefactor Ian, and Ian's group of henchmen. Together, you're going to find the treasure and redeem your family's name.
 
@@ -18,7 +18,7 @@ If you don't like how your hunt is going and you regret some of your choices, cl
 
 ## So, do you think you can steal the Declaration of Independence? [Start Your Hunt Here](http://natl-treasure-cyoadventure.netlify.app "Hunt Your Own National Treasure") 📜
 
-![Screenshot of the winning page of the game](../assets/images/WinnerScreenshot.jpeg)
+![Screenshot of the winning page of the game](http://natl-treasure-cyoadventure.netlify.app/assets/images/WinnerScreenshot.jpeg)
 
 ### [View my Planning Materials](https://docs.google.com/document/d/1ZFDcidKbpyUpEmeshoS9aI2OC8LTM0BoioFQvgvnPTU/edit?usp=sharing "Hunt Your Own National Treasure Planning Materials") 🗒
 
