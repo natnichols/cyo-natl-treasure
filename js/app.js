@@ -32,7 +32,6 @@ function init() {
 }
 
 function showNextStoryObj(nextIdx) {
-  // display next prompt (+ corresponding image and options) based on its index in the storyObjs array
   imgElement.setAttribute('src', storyObjs[nextIdx].image)
   promptElement.textContent = storyObjs[nextIdx].prompt
   button1Element.textContent = storyObjs[nextIdx].options[0].opt1
@@ -43,8 +42,6 @@ function handleClickButton1() {
   let newIdx = storyObjs[promptIdx].options[0].goTo
   promptIdx = newIdx
   if (winningIdxVals.includes(newIdx)) {
-    // game has been won
-    // display corresponding final image and prompt
     imgElement.setAttribute('src', storyObjs[newIdx].image)
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'
@@ -52,8 +49,6 @@ function handleClickButton1() {
     confetti.start(2000)
   }
   if (losingIdxVals.includes(newIdx)) {
-    // game has been lost
-    // display corresponding final image and prompt
     imgElement.setAttribute('src', storyObjs[newIdx].image)
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'
@@ -68,8 +63,6 @@ function handleClickButton2() {
   let newIdx = storyObjs[promptIdx].options[1].goTo
   promptIdx = newIdx
   if (winningIdxVals.includes(newIdx)) {
-    // game has been won
-    // display corresponding final image and prompt
     imgElement.setAttribute('src', storyObjs[newIdx].image)
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'
@@ -77,8 +70,6 @@ function handleClickButton2() {
     confetti.start(2000)
   }
   if (losingIdxVals.includes(newIdx)) {
-    // game has been lost
-    // display corresponding final image and prompt
     imgElement.setAttribute('src', storyObjs[newIdx].image)
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'

@@ -8,21 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-/* resets font size to be 62.5% of the user preference - 
-     in most browser configurations this will be 10px */
-/* :root {
-  font-size: 62.5%;
-} */
-
 nav {
-  /* border: #FFFAE3;
-  border-style: dotted; */
   display: flex;
 }
 
 body {
   background-color: darkgoldenrod;
-  /* Use a system font, if none are available use an available sans-sarif font */
   font-family: 'Glegoo', serif;
   margin: 10px;
   padding: 10px;
@@ -38,8 +29,7 @@ h1 {
   text-align: center;
 }
 
-/* menu & restart buttons don't have individual styling yet - below is placeholder default button styling */
-/* specify this as for #restart? or keep id-less while there's no menu button? Will menu button look the same anyway? */
+/* specify this styling for #restart? or keep id-less while there's no menu button? Will menu button look the same anyway? */
 button {
   margin: 5px;
   border-radius: 5px;
@@ -57,7 +47,6 @@ button:hover {
   background-color: darkgoldenrod;
   cursor: pointer;
 }
-/* ^^^ Default button styling above ^^^ */
 
 #story-container {
   background-color: goldenrod;
@@ -74,7 +63,6 @@ button:hover {
 }
 
 #img-prompt-container {
-  /* background-color: rgba(184, 135, 11, 0.299); */
   display: flex;
   flex-direction: column;
   height: 500px;
@@ -83,23 +71,15 @@ button:hover {
   align-items: center;
   margin: 10px;
   padding: 10px;
-  /* border-style: dotted;
-  border-color: lightgoldenrodyellow; */
 }
 
 #image {
-  /* background-color: rgba(255, 255, 224, 0.5); */
-  /* color: black; */
   height: 396px;
   width: 950px;
-  /* text-align: center;
-  font-family: sans-serif; */
-  /* font-size: 25px; */
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 5px;
-  /* padding: 10px; */
   border-style: inset;
   border-color: darkgoldenrod;
 }
@@ -123,17 +103,13 @@ button:hover {
 }
 
 #option-container {
-  /* background-color: goldenrod; */
   display: flex;
-  /* flex-direction: column; */
   height: 125px;
   width: 1000px;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
   padding: 10px;
-  /* border-style: inset;
-  border-color: black; */
 }
 
 button.option-button {  
@@ -159,39 +135,3 @@ button.option-button:hover {
   background-color: darkgoldenrod;
   cursor: pointer;
 }
-
-
-/* maybe remove below section? may no longer serve any purpose */
-
-/* @media only screen and (max-width: 1024px) {
-  body {
-    background-color: rgb(253, 219, 132);
-  }
-  #flex-story-container {
-    background-color: darkgoldenrod;
-  }
-  #img-prompt-container { */
-    /* background-color: darkgoldenrod; */
-    /* padding: 5px; */
-    /* justify-content: space-around;
-  }
-  #option-container { */
-    /* background-color: darkgoldenrod; */
-    /* padding: 5px; */
-    /* justify-content: space-around;
-  }
-  #image {
-    background-color: goldenrod;
-    border-style: inset;
-    border-color: lightgoldenrodyellow;
-  }
-  #prompt {
-    background-color: rgb(251, 224, 153);
-    color: black;
-    border-style: inset;
-    border-color: goldenrod;
-  }
-  button#restart, button#opt-btn-1, button#opt-btn-2 {
-    background-color: lightgreen;
-  }
-} */
