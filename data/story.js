@@ -105,6 +105,51 @@ const storyObjs = [
       }
     ]
   },
+  {
+    image: '../assets/images/CHUGCHAMPAGNEWINNER.jpeg',
+    promptNum: 7,
+    prompt: `YOU'VE WON! Want to start a new treasure hunt? Click the Restart button to play again!`,
+    // options: [
+    //   {
+    //     opt1: `Help Riley up and ask him if he's okay`,
+    //     goTo: 7
+    //   },
+    //   {
+    //     opt2: `Ignore Riley while he cowers and go to the next door`,
+    //     goTo: 4
+    //   }
+    // ]
+  },
+  {
+    image: '../assets/images/ALTWINNER.jpeg',
+    promptNum: 8,
+    prompt: `YOU'VE WON IN A DIFFERENT WAY! Want to start a new treasure hunt? Click the Restart button to play again!`,
+    // options: [
+    //   {
+    //     opt1: `Help Riley up and ask him if he's okay`,
+    //     goTo: 7
+    //   },
+    //   {
+    //     opt2: `Ignore Riley while he cowers and go to the next door`,
+    //     goTo: 4
+    //   }
+    // ]
+  },
+  {
+    image: '../assets/images/LOSERPLACEHOLDER.jpeg',
+    promptNum: 9,
+    prompt: `YOU LOST :( Want to try again from the beginning? Click the Restart button to play again!`,
+    // options: [
+    //   {
+    //     opt1: `Help Riley up and ask him if he's okay`,
+    //     goTo: 7
+    //   },
+    //   {
+    //     opt2: `Ignore Riley while he cowers and go to the next door`,
+    //     goTo: 4
+    //   }
+    // ]
+  },
 ]
 
 export {

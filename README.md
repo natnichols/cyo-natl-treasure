@@ -25,7 +25,7 @@ If you don't like how your hunt is going and you regret some of your choices, cl
 ### [View my Planning Materials](https://docs.google.com/document/d/1ZFDcidKbpyUpEmeshoS9aI2OC8LTM0BoioFQvgvnPTU/edit?usp=sharing "Hunt Your Own National Treasure Planning Materials") 🗒
 
 ## Attributions 🙌
-* Images sourced from [HD/HQ Movie Screencaps Gallery](https://kissthemgoodbye.net/movie/thumbnails.php?album=309 "HD/HQ Movie Screencaps Gallery - kissthemgoodbye.net")
+* Images sourced from [HD/HQ Movie Screencaps Gallery](https://kissthemgoodbye.net/movie/thumbnails.php?album=309 "HD/HQ Movie Screencaps Gallery - kissthemgoodbye.net") and [FanCaps.net](https://fancaps.net/ "FanCaps.net")
 
 ## Technologies used 🧰
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
