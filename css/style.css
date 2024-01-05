@@ -15,8 +15,8 @@ html {
 } */
 
 nav {
-  border: #FFFAE3;
-  border-style: dotted;
+  /* border: #FFFAE3;
+  border-style: dotted; */
   display: flex;
 }
 
@@ -62,8 +62,8 @@ button:hover {
   background-color: goldenrod;
   display: flex;
   flex-direction: column;
-  height: 950px;
-  width: 1050px;
+  height: 625px;
+  width: 1000px;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
@@ -73,7 +73,7 @@ button:hover {
 }
 
 #img-prompt-container {
-  background-color: rgba(184, 135, 11, 0.299);
+  /* background-color: rgba(184, 135, 11, 0.299); */
   display: flex;
   flex-direction: column;
   height: 500px;
@@ -82,12 +82,12 @@ button:hover {
   align-items: center;
   margin: 10px;
   padding: 10px;
-  border-style: dotted;
-  border-color: lightgoldenrodyellow;
+  /* border-style: dotted;
+  border-color: lightgoldenrodyellow; */
 }
 
 #image {
-  background-color: rgba(255, 255, 224, 0.5);
+  /* background-color: rgba(255, 255, 224, 0.5); */
   color: black;
   height: 396px;
   width: 950px;
@@ -98,8 +98,8 @@ button:hover {
   align-items: center;
   justify-content: center;
   margin: 5px;
-  padding: 10px;
-  border-style: dotted;
+  /* padding: 10px; */
+  border-style: inset;
   border-color: darkgoldenrod;
 }
 
@@ -116,12 +116,12 @@ button:hover {
   justify-content: center;
   margin: 5px;
   padding: 10px;
-  border-style: dotted;
+  border-style: inset;
   border-color: darkgoldenrod;
 }
 
 #option-container {
-  background-color: goldenrod;
+  /* background-color: goldenrod; */
   display: flex;
   /* flex-direction: column; */
   height: 125px;
@@ -130,8 +130,8 @@ button:hover {
   align-items: center;
   margin: 10px;
   padding: 10px;
-  border-style: inset;
-  border-color: black;
+  /* border-style: inset;
+  border-color: black; */
 }
 
 button.option-button {  
@@ -159,6 +159,8 @@ button.option-button:hover {
 }
 
 
+/* maybe remove below section? may no longer serve any purpose */
+
 @media only screen and (max-width: 1024px) {
   body {
     background-color: rgb(253, 219, 132);
@@ -167,13 +169,13 @@ button.option-button:hover {
     background-color: darkgoldenrod;
   }
   #img-prompt-container {
-    background-color: darkgoldenrod;
-    padding: 5px;
+    /* background-color: darkgoldenrod; */
+    /* padding: 5px; */
     justify-content: space-around;
   }
   #option-container {
-    background-color: darkgoldenrod;
-    padding: 5px;
+    /* background-color: darkgoldenrod; */
+    /* padding: 5px; */
     justify-content: space-around;
   }
   #image {
