@@ -3,7 +3,7 @@ const storyObjs = [
   {
     image: '../assets/images/image0.jpeg',
     promptNum: 0,
-    prompt: `Your grandfather once shared the last known clue to find the treasure - "The Secret lies with Charlotte". "The Charlotte" was long suspected to be a ship lost at sea. After a long snowmobile ride through the Arctic, you, joined by Riley, Ian, and Ian's team, have finally found the Charlotte buried in the snow. After unearthing the ship, you step onto the deck you find a door to the hull.`,
+    prompt: `Your grandfather once shared the last known clue to find the treasure - "The Secret lies with Charlotte". The Charlotte was long suspected to be a ship lost at sea. After a long snowmobile ride through the Arctic, you, joined by Riley, Ian, and Ian's team, have finally found the Charlotte buried in the snow. After unearthing the ship, you step onto the deck and find a door to the hull.`,
     options: [
       {
         opt1: `Open the door`,
@@ -105,6 +105,7 @@ const storyObjs = [
       }
     ]
   },
+  // WIN/LOSE OBJECTS BELOW, new story objects will be added above
   {
     image: '../assets/images/CHUGCHAMPAGNEWINNER.jpeg',
     promptNum: 7,
