@@ -28,6 +28,7 @@ If you don't like how your treasure hunt is going and you regret some of your ch
 ## Attributions 🎉
 * Fonts are sourced from [Google Fonts](https://fonts.google.com/ "Browse Google Fonts"), and additional font research was found in the [r/identifythisfont Subreddit](https://www.reddit.com/r/identifythisfont "r/identifythisfont")
 * Images are sourced from [HD/HQ Movie Screencaps Gallery](https://kissthemgoodbye.net/movie/thumbnails.php?album=309 "HD/HQ Movie Screencaps Gallery - kissthemgoodbye.net") and [FanCaps.net](https://fancaps.net/ "FanCaps.net")
+* Audio clips are sourced from [Yarn](https://getyarn.io/) and [CloudConvert](https://cloudconvert.com/) was used for audio file conversion
 * New methods research found in [MDN Web Docs](https://developer.mozilla.org/en-US/ "MDN Web Docs") and the [r/learnjavascript Subreddit](https://www.reddit.com/r/learnjavascript "r/learnjavascript") 
 * Confetti code is from [GA's SEI Github (Private Repository)](https://github.com/SEI-Remote/confetti/blob/main/confetti.js "SEI-Remote/confetti GitHub Repo")
 

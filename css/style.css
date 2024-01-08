@@ -130,7 +130,7 @@ button#opt-btn-2 {
   background-color: lightseagreen;
 }
 
-button.option-button:hover {
+button#opt-btn-1:hover, button#opt-btn-2:hover {
   color: #FFFAE3;
   background-color: darkgoldenrod;
   cursor: pointer;
