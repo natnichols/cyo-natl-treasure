@@ -29,7 +29,6 @@ init()
 
 function init() {
   promptIdx = 0
-  // promptElement.classList.remove = ('animate__animated', 'animate__fadeIn')
   button1Element.style.display = 'revert'
   button2Element.style.display = 'revert'
   showNextStoryObj(promptIdx)
@@ -38,9 +37,12 @@ function init() {
 function showNextStoryObj(nextIdx) {
   imgElement.setAttribute('src', storyObjs[nextIdx].image)
   promptElement.textContent = storyObjs[nextIdx].prompt
-  promptElement.classList.add = ('animate__animated', 'animate__fadeIn')
+  promptElement.classList.add('animate__animated', 'animate__fadeIn')
   button1Element.textContent = storyObjs[nextIdx].options[0].opt1
   button2Element.textContent = storyObjs[nextIdx].options[1].opt2
+  setTimeout(() => {
+    promptElement.classList.remove('animate__animated', 'animate__fadeIn')
+  }, 250)
 }
 
 function handleClickButton1() {
@@ -55,6 +57,7 @@ function handleClickButton1() {
     confetti.start(2000)
   }
   if (losingIdxVals.includes(newIdx)) {
+    // if statement
     imgElement.setAttribute('src', storyObjs[newIdx].image)
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'
