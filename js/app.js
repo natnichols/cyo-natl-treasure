@@ -57,7 +57,11 @@ function handleClickButton1() {
     confetti.start(2000)
   }
   if (losingIdxVals.includes(newIdx)) {
-    // if statement
+    if (promptIdx === 8) {
+      storyAudio.playLoseAbigail()
+    } else if (promptIdx === 9 ) {
+      storyAudio.playLoseFbi()
+    }
     imgElement.setAttribute('src', storyObjs[newIdx].image)
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'
@@ -72,6 +76,7 @@ function handleClickButton2() {
   let newIdx = storyObjs[promptIdx].options[1].goTo
   promptIdx = newIdx
   if (winningIdxVals.includes(newIdx)) {
+    storyAudio.playWinner()
     imgElement.setAttribute('src', storyObjs[newIdx].image)
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'
@@ -79,6 +84,11 @@ function handleClickButton2() {
     confetti.start(2000)
   }
   if (losingIdxVals.includes(newIdx)) {
+    if (promptIdx === 8) {
+      storyAudio.playLoseAbigail()
+    } else if (promptIdx === 9) {
+      storyAudio.playLoseFbi()
+    }
     imgElement.setAttribute('src', storyObjs[newIdx].image)
     promptElement.textContent = storyObjs[newIdx].prompt
     button1Element.style.display = 'none'
