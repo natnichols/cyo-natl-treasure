@@ -16,7 +16,7 @@ But to find a treasure, you need a map. And what better place for the map to be 
 
 The goal of this game is to successfully steal the Declaration of Independence. As you move through the story, you will be presented with a decision to make and two option buttons to choose from. Each time you click an option button, you will advance the story into a new scene in your own unique adventure. Choose wisely, and your hunt will end in success! Choose poorly, and the fate of your hunt could be ruinous.
 
-![Screencap from National Treasure of Ben Gates with the Declaration](/assets/images/MovieScreencap2.jpeg)
+![Screencap from National Treasure of Agent Sadusky interrogating Ben Gates](/assets/images/MovieScreencap2.jpeg)
 > "Someone's got to go to prison, Ben." ⚖️
 
 If you don't like how your treasure hunt is going and you regret some of your choices, click the Restart button under title to start fresh at the starting decision with a new hunt.
