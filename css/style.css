@@ -27,6 +27,7 @@ h1 {
   font-family: 'Cinzel', serif;
   font-size: 25px;
   text-align: center;
+  margin-top: .5%;
 }
 
 /* specify this styling for #restart? or keep id-less while there's no menu button? Will menu button look the same anyway? */
@@ -40,6 +41,7 @@ button {
   letter-spacing: 1px;
   font-weight: bolder;
   font-family: 'Glegoo', serif;
+  border-style: outset;
 }
 
 button:hover {
@@ -58,8 +60,10 @@ button:hover {
   align-items: center;
   margin: 10px;
   padding: 10px;
+  border: 3px;
   border-style: inset;
-  border-color: black;
+  border-color: rgb(77, 56, 1);
+  border-radius: 1%;
 }
 
 #img-prompt-container {
@@ -80,8 +84,9 @@ button:hover {
   align-items: center;
   justify-content: center;
   margin: 5px;
+  border: 2px;
   border-style: inset;
-  border-color: darkgoldenrod;
+  border-color: rgb(88, 64, 3);
 }
 
 #prompt {
@@ -98,8 +103,9 @@ button:hover {
   justify-content: center;
   margin: 5px;
   padding: 10px;
+  border: 2px;
   border-style: inset;
-  border-color: darkgoldenrod;
+  border-color: rgb(88, 64, 3);
 }
 
 #option-container {
@@ -115,7 +121,7 @@ button:hover {
 button.option-button {  
   margin: 5px;
   border-radius: 5px;
-  color: black;
+  color: rgb(82, 60, 2);
   font-size: 15px;
   padding: 8px;
   font-weight: bolder;
