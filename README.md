@@ -2,7 +2,7 @@
 
 #### A Choose Your Own Adventure Game inspired by the cinematic masterpiece _National Treasure_ (2004)
 
-> "Ben, you can't steal the Declaration of Independence. It's like stealing a national monument...not that it _can't_ be done - but it ***_shouldn't_*** be done." 🗽
+> "Ben, you can't steal the Declaration of Independence. It's like stealing a national monument...not that it _can't_ be done, but it ***_shouldn't_*** be done." 🗽
 
 ![Screencap from National Treasure of Ben Gates with the Declaration](/assets/images/MovieScreencap1.jpeg)
 
@@ -43,7 +43,7 @@ If you don't like how your treasure hunt is going and you regret some of your ch
 
 ## Ice Box 🧊
 - [x] Confetti!
-- [ ] Sound Effects
+- [x] Sound Effects
 - [ ] Light/Dark Mode
 - [ ] Mobile responsiveness
 - [ ] Fun cursor
