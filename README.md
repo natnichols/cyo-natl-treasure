@@ -8,7 +8,7 @@
 
 _We'll see about that._
 
-Your name is Benjamin Franklin Gates, you are the last of a line of discgraced treasure hunters, and you are determined to find the legendary Knights Templar Treasure that your grandfather told you about as a kid. You have put together a team: your trusty tech buddy Riley Poole, your benefactor Ian, and Ian's group of henchmen. Together, you're going to find the treasure and redeem your family's name.
+Your name is Benjamin Franklin Gates, you are the last of a line of disgraced treasure hunters, and you are determined to find the legendary Knights Templar Treasure that your grandfather told you about as a kid. You have put together a team: your trusty tech buddy Riley Poole, your benefactor Ian, and Ian's group of henchmen. Together, you're going to find the treasure and redeem your family's name.
 
 But to find a treasure, you need a map. And what better place for the map to be hidden than on the back of the Declaration of Independence? But you can't exactly...borrow it.
 
