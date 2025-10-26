@@ -22,6 +22,7 @@ The goal of this game is to successfully steal the Declaration of Independence. 
 If you don't like how your treasure hunt is going and you regret some of your choices, click the Restart button under title to start fresh at the starting decision with a new hunt.
 
 ## So, do you think you can steal the Declaration of Independence? [Start Your Treasure Hunt Here](http://natl-treasure-cyoadventure.netlify.app "Hunt Your Own National Treasure") 📜
+#### *** _For best experience, use the full-screen window setting on a desktop browser. Meant to be played like a 2000s computer game on the family computer!_
 
 ![Screenshot of the winning page of the game](/assets/images/WINNERChampagneTreasonToast.png)
 
